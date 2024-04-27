@@ -11,7 +11,7 @@ export const propertiesGlobal = Object.freeze({
   PACKAGE_VIEW_URL: "https://www.skypack.dev/view/",
   CDN_JS_DELIVER: "https://cdn.jsdelivr.net/npm/{}@{}/+esm",
   EMPTY_CONTENT_ENCODE:
-    "JTdDJTdDJTdDJTNDc3R5bGUlM0UlN0MlN0MlN0MlN0MlN0MlN0MlM0MlMkZzdHlsZSUzRSU3QyU3QyU3QyUzQ3NjcmlwdCUyMHR5cGUlM0QlMjJtb2R1bGUlMjIlM0UlN0MlN0MlN0MlN0MlN0MlN0MlM0MlMkZzY3JpcHQlM0U=",
+    "D4g8GcBcE8BsFMB8IXFAeinJKIGMAnASwAdIACGE+AXgCIBbAewBMBXBO5VNTQ0yIiA",
   DEFAULT_HISTORY_ITEMS_NAME: "Untitle"
 });
 

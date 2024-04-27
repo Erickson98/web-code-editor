@@ -22,14 +22,17 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalContext } from "./components/context/GlobalContext";
 
+import {
+  compressToEncodedURIComponent,
+  decompressFromEncodedURIComponent
+} from "lz-string";
+
 import "./utils/slot-code-editor";
 import {
   getHistory,
   extractURLContent
 } from "./components/asideBar/historyComponent/utilsHistory";
 import { handleLayout } from "./components/asideSettings/utils";
-import { setMonacoOverflowProperty } from "./utils/utils";
-import { LocalStorage } from "./components/localStorage/localStorage";
 import { split } from "./Split";
 const useDebounce = (value, delay) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
@@ -131,7 +134,7 @@ function App() {
       handleOnChangeCSS(cssContent);
       handleOnChangeJS(jsContent);
 
-      var encodedContent = btoa(encodeURIComponent(text));
+      const encodedContent = compressToEncodedURIComponent(text);
       setEncode(encodedContent);
 
       setEncodeBase64(encodedContent);
@@ -143,7 +146,6 @@ function App() {
       console.error(error);
     }
   };
-  debugger;
   useEffect(() => {
     if (countRefreshe < 2) {
       return;
@@ -361,8 +363,7 @@ function App() {
 
       let separator = "|||";
       let decoded = decodeBase64.value ? decodeBase64.value : "";
-
-      let decodedContent = decodeURIComponent(atob(decoded));
+      const decodedContent = decompressFromEncodedURIComponent(decoded);
       let contents = decodedContent.split(separator);
       HandleOnChangeHtml(contents[0]);
       handleOnChangeCSS(contents[2]);
