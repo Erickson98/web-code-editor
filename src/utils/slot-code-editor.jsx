@@ -35,7 +35,7 @@ class MonacoEditor extends HTMLElement {
       
       </slot>
       <img class="imamge-js"
-          src="src/assets/js.png"
+          src="assets/js.png"
           alt=""
           srcset=""
         

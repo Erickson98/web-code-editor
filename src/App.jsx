@@ -490,7 +490,7 @@ function App() {
               <img
                 className="img-sidebar"
                 draggable="false"
-                src="./src/assets/paper_icon.svg"
+                src="assets/paper_icon.svg"
                 width={"40px"}
               />
               <span className="editor-aside-bar-span">Editor</span>
@@ -502,7 +502,7 @@ function App() {
             >
               <img
                 className="img-sidebar"
-                src="./src/assets/package_light_icon.svg"
+                src="assets/package_light_icon.svg"
                 width={"40px"}
               />
               <span className="editor-aside-bar-span">Dependecies</span>
@@ -514,7 +514,7 @@ function App() {
             >
               <img
                 className="img-sidebar"
-                src="./src/assets/cloud_download_icon.svg"
+                src="assets/cloud_download_icon.svg"
                 width={"40px"}
               />
               <span className="editor-aside-bar-span">Download</span>
@@ -526,7 +526,7 @@ function App() {
             >
               <img
                 className="img-sidebar"
-                src="./src/assets/history_line_icon.svg"
+                src="assets/history_line_icon.svg"
                 width={"40px"}
               />
               <span className="editor-aside-bar-span">History</span>
@@ -540,7 +540,7 @@ function App() {
             >
               <img
                 className="img-sidebar"
-                src="./src/assets/eye_preview_see_seen_view_icon.svg"
+                src="assets/eye_preview_see_seen_view_icon.svg"
                 width={"40px"}
               />
               <span className="editor-aside-bar-span">Preview</span>
@@ -552,7 +552,7 @@ function App() {
             >
               <img
                 className="img-sidebar"
-                src="./src/assets/share_turn_icon.svg"
+                src="assets/share_turn_icon.svg"
                 width={"40px"}
               />
               <span className="editor-aside-bar-span">Share</span>
@@ -564,7 +564,7 @@ function App() {
             >
               <img
                 className="img-sidebar"
-                src="./src/assets/settings_parameters_params_setting_tools_icon.svg"
+                src="assets/settings_parameters_params_setting_tools_icon.svg"
                 width={"40px"}
               />
               <span className="editor-aside-bar-span">Settings</span>
@@ -585,7 +585,7 @@ function App() {
 
       <div className="wrapper">
         <monaco-editor
-          data-image-src="src/assets/html.svg"
+          data-image-src="assets/html.svg"
           grid-area="firstEditor"
           overflow="hidden"
         >
@@ -604,7 +604,7 @@ function App() {
 
         <div id="firstGutter" className="first-gutter column" />
         <monaco-editor
-          data-image-src="src/assets/css icon.svg"
+          data-image-src="assets/css icon.svg"
           grid-area="secondEditor"
           overflow="hidden"
         >
@@ -625,7 +625,7 @@ function App() {
         <div id="thirdGutter" className="third-gutter" />
 
         <monaco-editor
-          data-image-src="src/assets/js.png"
+          data-image-src="assets/js.png"
           grid-area="thirdEditor"
           overflow="hidden"
         >
