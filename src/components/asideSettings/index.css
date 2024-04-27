@@ -1,0 +1,29 @@
+
+.wrapper-layouts{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: large;
+}
+.layouts-grid{
+    display: flex; 
+    gap: 0.8rem;
+    align-items: center; 
+}
+.button-layout{
+    padding: 5px;
+   
+}
+.button-layout:hover{
+    background-color: rgb(51, 51, 51);
+}
+
+button:focus,
+button:focus-visible {
+background-color: rgb(51, 51, 51);
+} 
+ 
+.actions-containers{
+    font-size: 16px;
+    padding:  0.08rem 0.5rem;
+}
