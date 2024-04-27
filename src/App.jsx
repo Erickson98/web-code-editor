@@ -143,7 +143,7 @@ function App() {
       console.error(error);
     }
   };
-
+  debugger;
   useEffect(() => {
     if (countRefreshe < 2) {
       return;
@@ -389,7 +389,8 @@ function App() {
           automaticLayout: true,
           cursorBlinking: cursorBlinking,
           cursorWidth: cursorWidth,
-          fixedOverflowWidgets: true
+          fixedOverflowWidgets: true,
+          configGutter: listGuttersConfig.DEFAULT_LAYOUT
         };
         localStorage.setItem("settings", JSON.stringify(configurations));
         split(DEFAULT_LAYOUT(document));
