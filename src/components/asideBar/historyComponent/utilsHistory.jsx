@@ -10,17 +10,18 @@ export const updateElementFromHistory = (key, urlEncoded) => {
       urlEncoded !== propertiesGlobal.EMPTY_CONTENT_ENCODE
     ) {
       return newHsitory(urlEncoded);
-    }
-    const current = history.current;
-    const snapShots = history.snapshots[current.data];
-    for (const snapshot of snapShots) {
-      if (snapshot.id === current.id && urlEncoded !== "") {
-        snapshot.value = urlEncoded;
-        current.value = urlEncoded;
-        break;
+    } else {
+      const current = history.current;
+      const snapShots = history.snapshots[current.data];
+      for (const snapshot of snapShots) {
+        if (snapshot.id === current.id && urlEncoded !== "") {
+          snapshot.value = urlEncoded;
+          current.value = urlEncoded;
+          break;
+        }
       }
+      return LocalStorage.set(key, history);
     }
-    return LocalStorage.set(key, history);
   } catch (error) {
     console.error(error);
   }
