@@ -105,23 +105,27 @@ const firstGuttersConfig = (doc) => {
   secondGutter.classList.add("second-gutter");
   secondGutter.classList.add("row");
   secondGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_1_SECOND_GUTTER;
+  secondGutter.style.cursor = "row-resize";
 
   const thirdGutter = doc.querySelector(".third-gutter");
   thirdGutter.classList.remove(...thirdGutter.classList);
   thirdGutter.classList.add("third-gutter");
   thirdGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_1_THIRD_GUTTER;
+  thirdGutter.style.cursor = "all-resize";
 };
 
 const secondGuttersConfig = (doc) => {
   const secondGutter = doc.querySelector(".second-gutter");
   secondGutter.classList.remove(...secondGutter.classList);
   secondGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_2_SECOND_GUTTER;
+  secondGutter.style.cursor = "row-resize";
   secondGutter.classList.add("second-gutter");
   secondGutter.classList.add("row");
 
   const thirdGutter = doc.querySelector(".third-gutter");
   thirdGutter.classList.remove(...thirdGutter.classList);
   thirdGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_2_THIRD_GUTTER;
+  thirdGutter.style.cursor = "col-resize";
   thirdGutter.classList.add("third-gutter");
   thirdGutter.classList.add("column");
 
@@ -144,11 +148,13 @@ const thirdGuttersConfig = (doc) => {
   secondGutter.classList.add("second-gutter");
   secondGutter.classList.add("row");
   secondGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_3_SECOND_GUTTER;
+  secondGutter.style.cursor = "row-resize";
 
   const thirdGutter = doc.querySelector(".third-gutter");
   thirdGutter.classList.remove(...thirdGutter.classList);
   thirdGutter.classList.add("third-gutter");
   thirdGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_3_THIRD_GUTTER;
+  thirdGutter.style.cursor = "all-resize";
 };
 
 const fourthGuttersConfig = (doc) => {
@@ -161,12 +167,14 @@ const fourthGuttersConfig = (doc) => {
   const secondGutter = doc.querySelector(".second-gutter");
   secondGutter.classList.remove(...secondGutter.classList);
   secondGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_4_SECOND_GUTTER;
+  secondGutter.style.cursor = "col-resize";
   secondGutter.classList.add("second-gutter");
   secondGutter.classList.add("column");
 
   const thirdGutter = doc.querySelector(".third-gutter");
   thirdGutter.classList.remove(...thirdGutter.classList);
   thirdGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_4_THIRD_GUTTER;
+  thirdGutter.style.cursor = "col-resize";
   thirdGutter.classList.add("third-gutter");
   thirdGutter.classList.add("column");
 };
@@ -181,12 +189,14 @@ const fiveGuttersConfig = (doc) => {
   const secondGutter = doc.querySelector(".second-gutter");
   secondGutter.classList.remove(...secondGutter.classList);
   secondGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_5_SECOND_GUTTER;
+  secondGutter.style.cursor = "row-resize";
   secondGutter.classList.add("second-gutter");
   secondGutter.classList.add("row");
 
   const thirdGutter = doc.querySelector(".third-gutter");
   thirdGutter.classList.remove(...thirdGutter.classList);
   thirdGutter.style = PropertiesGridArea.GRID_AREA_CONFIG_5_THIRD_GUTTER;
+  thirdGutter.style.cursor = "row-resize";
   thirdGutter.classList.add("third-gutter");
   thirdGutter.classList.add("row");
 };
