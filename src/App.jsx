@@ -393,7 +393,7 @@ function App() {
           configGutter: listGuttersConfig.DEFAULT_LAYOUT
         };
         localStorage.setItem("settings", JSON.stringify(configurations));
-        split(DEFAULT_LAYOUT(document));
+        const splitInstance = new split(DEFAULT_LAYOUT(document));
       }
       const settings = JSON.parse(localStorage.getItem("settings"));
 
